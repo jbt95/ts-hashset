@@ -1,0 +1,9 @@
+node_modules
+**/.idea
+**/.vscode
+.history
+pids
+*.pid
+*.seed
+dist
+.nyc_output
