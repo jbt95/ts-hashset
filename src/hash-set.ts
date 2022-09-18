@@ -1,7 +1,7 @@
 import * as util from 'util';
 import { from, Observable } from 'rxjs';
 
-export default class HashSet<T> extends Set<T> {
+export class HashSet<T> extends Set<T> {
 	public static of<T>(items: T[] | null) {
 		return new HashSet<T>(items);
 	}
