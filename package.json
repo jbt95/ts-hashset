@@ -2,7 +2,8 @@
 	"name": "ts-hashset",
 	"version": "1.0.0",
 	"packageManager": "yarn@3.2.3",
-	"main": "index.js",
+	"main": "dist/index.js",
+	"types": "src/index.ts",
 	"author": "Jordi Bermejo <berme495@gmail.com>",
 	"license": "ISC",
 	"scripts": {
@@ -10,7 +11,7 @@
 		"type:check": "yarn tsc --noEmit",
 		"build": "yarn tsc --build",
 		"prepare": "yarn husky install",
-		"prepack": "yarn test:coverage && yarn build",
+		"prepack": "yarn test && yarn build",
 		"postpack": "yarn tsc --build --clean",
 		"test:coverage": "yarn nyc mocha"
 	},
