@@ -4,8 +4,6 @@
 npm install ts-hashset
 ```
 
-### Input validation
-
 ```ts
 import { HashSet } from 'ts-hashset';
 
